@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="not-ready" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Moments of Happiness</title>
+    <link rel="stylesheet" href="/assets/styles/main-118c38b05f.min.css">
+
+    <meta name="description" content="Moments of Happiness, a series of WebGL experiments that will make you smile.">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@epicwebagency">
+    <meta name="twitter:title" content="Moments of Happiness">
+    <meta name="twitter:description" content="Moments of Happiness, a series of WebGL experiments that will make you smile.">
+    <meta name="twitter:image" content="https://moments.epic.net/assets/images/twitter-03a7f61646.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Moments of Happiness">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="https://moments.epic.net">
+    <meta property="og:description" content="Moments of Happiness, a series of WebGL experiments that will make you smile.">
+    <meta property="og:image" content="https://moments.epic.net/assets/images/facebook-0837e885ef.jpg">
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+</head>
+
+<body>
+<div class="about-block">
+    <div class="about-block-info">
+        <h1 class="about-block-title">Moments of<br/><span class="big">Happiness</span></h1>
+        <div class="about-block-description">
+            <p>
+                <strong>Moments of Happiness</strong> is a side project made by <span class="linkAbout"><a href="https://www.epic.net" target="_blank">EPIC Agency</a></span>.
+                <br/>A series of WebGL experiments developed to make you smile (and spin your fans) using <span class="linkAbout"><a href="http://threejs.org" target="_blank">Three.js</a></span>          and <span class="linkAbout"><a href="http://greensock.com" target="_blank">GSAP Library</a></span>.
+                <br/>Source codes are available on <span class="linkAbout"><a href="http://codepen.io/Yakudoo" target="_blank">codepen</a></span>          for educational purposes only.
+                <br/>These experiments are not fully optimized and might not work on some browsers or devices.
+            </p>
+            <p><span class="lightSignature"> Happily coded by <span class="linkAbout"><a href="http://twitter.com/yakudoo" target="_blank">Karim Maaloul</a></span></span>
+            </p>
+        </div>
+        <div class="about-block-close">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" width: "30px" height="30px">
+            <path d="M28.7,1.3c-0.8-0.8-2-0.8-2.8,0L15,12.2L4.2,1.3c0,0,0,0,0,0c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8
+	L12.2,15L1.3,25.8c-0.8,0.8-0.8,2,0,2.8c0.8,0.8,2,0.8,2.8,0L15,17.8l10.8,10.8c0.8,0.8,2,0.8,2.8,0c0.8-0.8,0.8-2,0-2.8
+	c0,0,0,0,0,0L17.8,15L28.7,4.2C29.4,3.4,29.4,2.1,28.7,1.3z" />
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="size-disclaimer">
+        <div class="about-block-info">
+            <div class="about-block-title">Moments of<br/><span class="big">Happiness</span></div>
+            <div class="about-block-description">
+                Sorry, you can't enjoy this experience on this device.<br/>Please, try this experience on a larger screen or on a desktop computer
+                that has a more powerful graphic card.
+            </div>
+        </div>
+    </div>
+    <div class="bgrHolder">
+        <div class="bgr bgr1"></div>
+        <div class="bgr bgr2"></div>
+    </div>
+    <div class="dragon-score">00</div>
+    <div class="world"></div>
+    <div class="gameover-instructions">Game Over</div>
+    <div class="top-score">000</div>
+    <div class="home-ui">
+        <div class="home-ui-title"></div>
+        <div class="home-ui-description"></div>
+        <div class="home-ui-cta">
+            <div class="home-ui-cta-bgr"></div>
+            <div class="home-ui-cta-text">go</div>
+        </div>
+    </div>
+    <div class="experience-info">
+        <div class="experience-info-top">
+            <div class="experience-info-order"></div>
+            <div class="experience-info-instructions"></div>
+            <div class="experience-info-title"></div>
+        </div>
+
+    </div>
+    <div class="about-nav link-border-color">
+        <svg class="speakerIcon link-border-color" fill="#231F20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+        <g>
+          <path d="M32.4,57.8c-1.4,0-2.8-0.5-3.8-1.6L19,47l-4.9,0C8.5,47,4,42.5,4,37v-3.7c0-2.6,0.9-5.1,2.5-6.9 C8.4,24.2,11.1,23,14,23h5l9.6-9.3c1.6-1.6,3.9-2,6-1.1c2.1,0.9,3.4,2.8,3.4,5.1v34.5c0,2.3-1.3,4.2-3.4,5.1 C33.9,57.7,33.1,57.8,32.4,57.8z M14,27c-1.7,0-3.3,0.7-4.5,2c-1,1.1-1.5,2.6-1.5,4.2V37c0,3.3,2.7,6,6,6h5c1,0,1.9,0.3,2.6,1 l0.1,0.1l9.7,9.3c0.7,0.7,1.5,0.4,1.7,0.3s0.9-0.5,0.9-1.4V17.7c0-1-0.7-1.3-0.9-1.4c-0.2-0.1-1-0.4-1.7,0.3L21.6,26 c-0.7,0.6-1.6,1-2.6,1H14z"
+          />
+        </g>
+        <g class="speakerWaves">
+          <path d="M56.9,57c-0.5,0-1-0.2-1.4-0.6c-0.7-0.8-0.7-2.1,0.1-2.9c4.9-4.9,7.5-11.4,7.5-18.5s-2.7-13.6-7.5-18.5 c-0.8-0.8-0.8-2.1-0.1-2.9c0.7-0.8,2-0.8,2.7-0.1C63.9,19.2,67,26.8,67,35c0,8.2-3.1,15.8-8.7,21.4C57.9,56.8,57.4,57,56.9,57z"
+          />
+          <path d="M51,52c-0.5,0-1-0.2-1.4-0.6c-0.8-0.8-0.8-2.1,0-2.9c3.5-3.6,5.5-8.4,5.5-13.6s-1.9-9.9-5.5-13.6 c-0.8-0.8-0.8-2.1,0-2.9c0.8-0.8,2-0.8,2.8,0C56.6,23,59,28.8,59,35s-2.4,12-6.6,16.4C52,51.8,51.5,52,51,52z"
+          />
+          <path d="M45,47c-0.5,0-1-0.2-1.4-0.6c-0.8-0.8-0.8-2.1,0-2.9c2.2-2.3,3.5-5.3,3.5-8.6c0-3.2-1.2-6.3-3.5-8.6 c-0.8-0.8-0.8-2.1,0-2.9c0.8-0.8,2-0.8,2.8,0c3,3,4.6,7.1,4.6,11.4s-1.6,8.4-4.6,11.4C46,46.8,45.5,47,45,47z"
+          />
+        </g>
+      </svg>
+        <div class="link link-about link-border-color">About</div>
+        <a class="link-epic" href="https://www.epic.net" target="_blank">
+            <svg class="epic-logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(188,153,78);stop-opacity:1" />
+              <stop offset="50%" style="stop-color:rgb(236,215,171);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(188,153,78);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <polygon points="88.9,38.1 69.9,26.7 69.9,4 12.6,38.1 12.6,38.1 12.6,83.5 12.6,83.5 31.7,94.8 50.8,83.5 31.7,72.1 31.7,49.4 50.8,60.8 69.9,49.4 69.9,72.1 50.8,83.5 69.9,94.8 88.9,83.5 88.9,83.5 88.9,83.5 88.9,60.8 88.9,48.1 88.9,38.1 "
+          />
+        </svg>
+        </a>
+    </div>
+    <div class="moments-nav">
+        <div class="moments-nav-container">
+            <div class="link link-all link-border-color">
+                <svg version="1.1" id="grid-svg" class="grid-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+            <g>
+              <circle cx="19" cy="3" r="2" />
+              <circle cx="19" cy="11" r="2" />
+              <circle cx="11" cy="3" r="2" />
+              <circle cx="11" cy="11" r="2" />
+              <circle cx="3" cy="3" r="2" />
+              <circle cx="3" cy="11" r="2" />
+              <circle cx="19" cy="19" r="2" />
+              <circle cx="11" cy="19" r="2" />
+              <circle cx="3" cy="19" r="2" />
+            </g>
+          </svg>
+                All moments
+            </div>
+            <div class="link link-previous link-border-color">Previous</div>
+            <div class="link link-next link-border-color">Next</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": [
+            "Firefox >= 20",
+            "Safari >= 6",
+            "Explorer >= 9",
+            "Chrome >= 12",
+            "ChromeAndroid >= 4.0",
+            "iOS >= 6"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    //stage-2
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    "@babel/plugin-proposal-function-sent",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-numeric-separator",
+    "@babel/plugin-proposal-throw-expressions"
+  ]
+}

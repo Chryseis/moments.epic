@@ -1,0 +1,141 @@
+.link-border-color{
+  border-color: #B297A2;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.about-nav{
+  position: absolute;
+  z-index: 20;
+  bottom: 30px;
+  left:50%;
+  transform: translate(-50%, 0%);
+  width:36px;
+  height:150px;
+}
+
+@media (min-width: 600px){
+  .about-nav{
+    border-left-width: 1px;
+    right:30px;
+    left:auto;
+    transform: translate(0%, 0%);
+  }
+}
+
+.link {
+  position:absolute;
+  box-sizing: border-box;
+  font-family: 'Voltaire';
+  color: #B297A2;
+  padding:10px 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.link::after {
+  position:relative;
+  display:block;
+  content:"";
+  background-color: #B297A2;
+  border-radius: 1px;
+  width:0px;
+  height:2px;
+  margin-top:2px;
+  transition: width 0.3s;
+}
+
+.link:hover::after{
+  width:100%;
+}
+
+.about-nav .link-about {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  bottom: 0px;
+}
+
+.epic-logo-svg{
+  position: absolute;
+  fill: #B297A2;
+  width: 20px;
+  height: 20px;
+  bottom: 10px;
+  left: 8px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.epic-logo-svg:hover{
+  fill: url(#logo-gradient);
+  transform: scale(1.2, 1.2);
+}
+
+.moments-nav{
+  position: absolute;
+  z-index: 18;
+  bottom: 30px;
+  right:65px;
+  width:150px;
+  overflow: hidden;
+}
+
+.moments-nav-container{
+  position: relative;
+  width:100%;
+  border-top-width: 1px;
+  transform: translate(100%, 0%);
+}
+
+.link-all{
+  position: relative;
+  border-top-width: 1px;
+  width:100%;
+  padding: 10px 15px;
+}
+
+.link-previous{
+  position: relative;
+  bottom: 0px;
+  border-top-width: 1px;
+  left:0;
+  width:90px;
+  float: left;
+}
+
+.link-next{
+  position: relative;
+  bottom: 0px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  right: 0;
+  width: 58px;
+  float: left;
+}
+
+.grid-icon{
+  width:12px;
+  height:12px;
+  fill: #B297A2;
+  margin-right: 10px;
+}
+
+.speakerIcon{
+  fill:#B297A2;
+  position:relative;
+  z-index: 30;
+  width:24px;
+  padding: 6px 2px 6px 11px;
+  transition:transform .2s;
+  cursor: pointer;
+}
+
+.speakerIcon:hover{
+  transform : scale(1.2);
+}
